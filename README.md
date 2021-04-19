@@ -12,4 +12,11 @@ Using Powershell:
   
   
   similarly arm templates is also used for deploying app service on azure.
-    
+   Before executing the template we need to connect to azure account using:
+     $Credential = Get-Credential
+      Connect-AzAccount -Credential $Credential -Tenant 'xxxx-xxxx-xxxx-xxxx' -ServicePrincipal
+      
+  then we can execute arm template on powershell
+  
+  we also use azure-cli for execution of template.
+ 
